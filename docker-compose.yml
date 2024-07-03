@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend     # Path to the directory containing the Dockerfile for the backend
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
+  frontend:
+    build:
+       context: ./frontend    # Path to the directory containing the Dockerfile for the frontend
+       dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3307:3306"  # Change the host port to 3307
+    env_file:
+      - ./backend/.env
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

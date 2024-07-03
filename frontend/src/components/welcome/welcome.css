@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'KumbhSans';
+    src: url('../fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.welcomecontainer {
+    padding: 20px;
+    padding-left: 100px;
+    padding-right:100px;
+    margin-top: 10%;
+    margin-bottom: 10%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.heading1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'KumbhSans', sans-serif;
+}
+
+.content {
+    margin-top: 2%;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+
+}
+@media(max-width:1000px) {
+.welcomecontainer {
+    padding: 20px;
+    margin-top: 15%;
+
+}
+
+.content{
+    font-size: 18px;
+    margin-top: 5%;;
+}
+}
+@media(max-width:600px)
+{
+    .heading1{
+        font-size: 40px;
+    }
+}

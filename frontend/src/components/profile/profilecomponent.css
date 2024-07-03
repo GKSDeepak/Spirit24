@@ -1,0 +1,109 @@
+.card1{ 
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    width:70vw;
+    height:800px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .row1{
+ display: flex; 
+ align-items: center;
+justify-content: center;
+gap: 20px;
+  }
+  
+
+  .pp{
+    
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+  }
+
+  .p-large{
+    font-size: 50px;
+    color: white; 
+  
+  }
+  .p-small{
+    font-size: 20px;
+    color: white; 
+
+  }
+
+  .profiledetails{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+  .pdetails{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+   justify-self: center;
+    align-items: center;
+    gap: 20px;
+
+  }
+
+  .rounded-rect{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    width:250px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius:40px;
+    overflow: hidden;
+  }
+  .rounded-rect img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  .rounded-rect1 img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  .rounded-rect1{
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    width:250px;
+    height: 70px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius:40px;
+    overflow: hidden;
+  }
+
+  .black{
+    color:black;
+  }
+
+  .rounded-rect2{
+    display: flex;
+    padding: 10px;
+    width: 700px;
+    background-color: white;
+    justify-content: center;
+  }
+  
+ 

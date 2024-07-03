@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "KumbhSans";
+    src: url("../fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf");
+    font-weight: 800;
+}
+.contactdiv
+{
+ padding:50px;
+
+}
+.contactdiv2{
+    
+    display: flex;
+}
+.leftest
+{
+    font-size: 60px;
+    font-family: 'KumbhSans',sans-serif;
+    margin: 10px;
+}
+.rightest
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'KumbhSans',sans-serif;
+    gap: 10vh;
+
+}
+.cont{
+/* padding:20px; */
+margin-left: 10vw;
+}
+
+.contact-linkedin{
+    width: 2vw;
+    height: 2vw;
+    /* background-color:black; */
+    background-color: white;
+}
+
+@media only screen and (max-width:769px){
+    .contactdiv
+{
+    display: flex;
+    flex-direction: row;
+ padding:20px;
+
+}
+.contactdiv2{
+    display: flex;
+    flex-direction: row;
+    /* gap: 10vw; */
+
+}
+.leftest
+{
+    font-size: 40px;
+    font-family: 'KumbhSans',sans-serif;
+    margin: 10px;
+}
+.rightest
+{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'KumbhSans',sans-serif;
+}
+.cont{
+    /* width: 60vw; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+/* padding:20px; */
+margin-left: 0vw;
+}
+
+.contact-linkedin{
+    width: 2vw;
+    height: 2vw;
+    /* background-color:black; */
+    background-color: white;
+}
+.heading-need{
+    /* width: 50%; */
+    display: flex;
+    /* margin-right: 10vw; */
+}
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .contactdiv
+{
+    display: flex;
+    flex-direction: row;
+ padding:50px;
+
+}
+.contactdiv2{
+    display: flex;
+    flex-direction: row;
+    /* gap: 10vw; */
+
+}
+.leftest
+{
+    font-size: 50px;
+    font-family: 'KumbhSans',sans-serif;
+    margin: 10px;
+}
+.rightest
+{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'KumbhSans',sans-serif;
+    gap: 5vh;
+}
+.cont{
+    /* width: 60vw; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+/* padding:20px; */
+margin-left: 0vw;
+}
+
+.contact-linkedin{
+    width: 2vw;
+    height: 2vw;
+    /* background-color:black; */
+    background-color: white;
+}
+.heading-need{
+    /* width: 50%; */
+    display: flex;
+    /* margin-right: 10vw; */
+}
+}

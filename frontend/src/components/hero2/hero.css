@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'VVDS';
+  src: url('../fonts/VVDS-Fifties-Exp-Bold-Italic.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.Hero-wrap {
+  margin-top: 3%;
+  background-image: url('/public/ellipses.svg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+
+.small {
+  margin-top: 9%;
+  font-size: 1em;
+  height: 24px;
+  position: relative;
+  z-index: 10;
+}
+
+
+.large {
+  font-style: italic;
+  position: relative;
+  font-size: 23em;
+  padding: 0;
+  padding-right: 3%;
+  margin: -50px;
+  /* background-image: url('/public/ellipses.svg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-family: 'VVDS',sans-serif;
+  letter-spacing: 30px;
+}
+
+.animation {
+  position: relative;
+  /* width: 100%; */
+  height: 100%;
+  overflow: hidden;
+  /* Hide overflow */
+  overflow: hidden;
+  /* background: linear-gradient(rgba(229, 120, 71, 1), rgba(235, 69, 0, 1)), */
+  /* url('/public/ellipses.svg'); */
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+  background-position: center, center;
+}
+
+.animation::before {
+  content: "";
+  position: absolute;
+  /* top: 50%; Center vertically */
+  /* left: 50%; Center horizontally */
+  width: 100%;
+  /* Large enough to prevent clipping */
+  height: 60%;
+  /* Large enough to prevent clipping */
+  /* transform: translate(-50%, -50%); Center the image
+  background:url('/public/ballses.png') center center no-repeat; */
+  background-size: contain;
+  z-index: -1;
+  animation: rotateBalls 5s linear infinite;
+  transform-origin: center center;
+  /* Rotate around the center of the div */
+}
+
+/* @keyframes rotateBalls {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+
+.quote {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+
+.texts a {
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  color: white;
+  font-size: 12px;
+  background-color: black;
+  padding: 6px 26px;
+  border: none;
+  border-radius: 40px;
+}
+
+
+@media (max-width: 1200px) {
+  .Hero-wrap {
+    margin-top: 5%;
+  }
+
+
+  .small {
+    margin-top: 10%;
+    font-size: 1.2em;
+  }
+
+
+  .large {
+    /* font-style: italic; */
+    font-size: 15em;
+    margin: -30px;
+    background-image: url('/public/ellipses.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+
+  .quote {
+    font-size: 18px;
+  }
+
+
+  .texts a {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .Hero-wrap {
+    margin-top: 9%;
+  }
+
+
+  .small {
+    margin-top: 10%;
+    font-size: 1.2em;
+  }
+
+
+  .large {
+    font-size: 10em;
+    margin: -30px;
+    background-image: url('/public/ellipses.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    letter-spacing: 10px;
+  }
+
+
+  .quote {
+    font-size: 18px;
+  }
+
+
+  .texts a {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .Hero-wrap {
+    margin-top: 11%;
+  }
+
+
+  .small {
+    margin-top: 12%;
+    font-size: 1.4em;
+  }
+
+
+  .large {
+    font-size: 5em;
+    margin: -20px;
+    background-image: url('/public/ellipses.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+
+  .quote {
+    font-size: 16px;
+  }
+
+
+  .texts a {
+    font-size: 16px;
+    padding: 10px 35px;
+  }
+}
+
+

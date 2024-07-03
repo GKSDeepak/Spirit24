@@ -1,0 +1,295 @@
+@font-face {
+  font-family: 'VVDS';
+  src: url('../fonts/VVDS-Fifties-Exp-Bold-Italic.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Russo';
+  src: url('../fonts/RussoOne-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Musseo';
+  src: url('../fonts/MuseoModerno-VariableFont_wght.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.Hero-wrap {
+  margin-top: 3%;
+  background-image: url('/public/ellipses.svg');
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center
+}
+
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  width: 100%;
+ 
+}
+
+
+.small {
+  margin-top: 9%;
+  font-size: 1em;
+  height: 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.inner-div{
+  margin-top: 10%;
+  height: 25vw;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.large {
+  font-style: italic;
+  position: relative;
+  font-size: 8vw;
+  padding: 0;
+  padding-right: 3%;
+  margin: -10px;
+  /* background-image: url('/public/ellipses.svg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-family: 'Russo',sans-serif;
+  word-spacing: 7px;
+  display: flex;
+}
+
+.animation {
+  position: relative;
+  /* width: 100%; */
+  height: 120%;
+  overflow: hidden;
+  /* Hide overflow */
+  overflow: hidden;
+  /* background: linear-gradient(rgba(229, 120, 71, 1), rgba(235, 69, 0, 1)), */
+  /* url('/public/ellipses.svg'); */
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+  background-position: center, center;
+}
+.large p{
+  color:#FCDABB;
+  padding-left:1vw;
+}
+
+.animation::before {
+  content: "";
+  position: absolute;
+  /* top: 50%; Center vertically */
+  /* left: 50%; Center horizontally */
+  width: 100%;
+  /* Large enough to prevent clipping */
+  height: 200%;
+  /* Large enough to prevent clipping */
+  /* transform: translate(-50%, -50%); Center the image
+  background:url('/public/ballses.png') center center no-repeat; */
+  background-size: contain;
+  z-index: -1;
+  animation: rotateBalls 5s linear infinite;
+  transform-origin: center center;
+  /* Rotate around the center of the div */
+}
+
+/* @keyframes rotateBalls {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+
+.quote {
+  position: relative;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+
+.texts a {
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  color: white;
+  font-size: 18px;
+  background-color: black;
+  padding: 6px 26px;
+  border: none;
+  border-radius: 40px;
+}
+
+.slogan{
+  color:white;
+  font-family: 'Inter',sans-serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.tagline{
+  font-family: 'Musseo',sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .Hero-wrap {
+    margin-top: 5%;
+  }
+
+
+  .small {
+    margin-top: 10%;
+    font-size: 1.2em;
+  }
+
+
+  .large {
+    /* font-style: italic; */
+    font-size: 8vw;
+    margin: -10px;
+    /* background-image: url('/public/ellipses.svg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+
+  .quote {
+    font-size: 18px;
+  }
+
+
+  .texts a {
+    font-size: 18px;
+    padding: 8px 30px;
+  }
+}
+
+@media(max-width:1000px)
+{
+  .slogan{
+    font-size: 18px;
+  }
+  .tagline
+  {
+    font-size:18px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Hero-wrap {
+    margin-top: 9%;
+  }
+
+
+  .small {
+    margin-top: 10%;
+    font-size: 1.2em;
+  }
+
+
+  .large {
+    margin: -10px;
+    background-image: url('/public/ellipses.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    word-spacing: 15px;
+  }
+
+
+  .quote {
+    font-size: 18px;
+  }
+
+
+  .texts a {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
+  .slogan
+  {
+    font-size: 14px;
+  }
+  .tagline
+  {
+    font-size:14px;
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+  .inner-div
+  {
+    height:120px;
+  }
+  .Hero-wrap {
+    margin-top: 11%;
+  }
+
+
+  .small {
+    margin-top: 12%;
+    font-size: 1.4em;
+  }
+
+
+  .large {
+    margin: 1px;
+    /* background-image: url('/public/ellipses.svg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    word-spacing: 5px;
+  }
+
+
+  .quote {
+    font-size: 16px;
+  }
+
+
+  .texts a {
+    font-size: 16px;
+    padding: 10px 35px;
+  }
+}
+@media(max-width:420px)
+{
+  .slogan
+  {
+    font-size: 10px;
+  }
+  .tagline
+  {
+    font-size: 10px ;
+  }
+  .texts{
+    height: 80vw;
+  }
+}

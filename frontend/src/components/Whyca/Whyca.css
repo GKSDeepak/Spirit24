@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "KumbhSans";
+    src: url("../fonts/KumbhSans-VariableFont_YOPQ,wght.ttf");
+    font-weight: 800;
+}
+
+
+
+.heading {
+    text-align: center;
+    font-weight: 800;
+    padding: 20px;
+    font-family: "KumbhSans", sans-serif;
+}
+
+ul {
+    font-size: 34px;
+    margin: 0 3vw 10vw 11vw;
+    list-style-type: circle;
+}
+
+li {
+    font-family: "KumbhSans", sans-serif;
+    padding: 6px 0;
+}
+
+/* Add CSS animation */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    list-style-type: disc;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tracking-in-contract li {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+@media(max-width:768px)
+{
+    .heading{
+        font-size:40px;
+    }
+
+    li {
+       font-size: 18px;
+    }
+}

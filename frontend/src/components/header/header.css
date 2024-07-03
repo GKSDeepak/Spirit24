@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Secular';
+  src: url('../fonts/SecularOne-Regular.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  position: fixed;
+  width: 80vw;
+  margin-top: 30px;
+  height: 50px;
+  background-color: #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  z-index: 1000;
+  overflow: visible; /* Prevents navbar from becoming scrollable */
+}
+
+.logo {
+  width: 6em;
+  mix-blend-mode: multiply;
+  color: black;
+  margin-top: 5px;
+  padding: 0 20px;
+}
+
+.h-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.h-wrap a {
+  font-size: 19px;
+  padding: 10 20px;
+  text-decoration: none;
+}
+
+.points {
+  display: inline;
+  font-family: 'Secular', sans-serif;
+}
+
+.login {
+  overflow: visible;
+}
+
+.points a {
+  margin-right: 35px;
+}
+
+.log {
+  font-size: 10px;
+  margin-top: 1%;
+  color: black;
+  background-color: rgba(238, 111, 39);
+  padding: 10px 26px;
+  border: none;
+  border-radius: 40px;
+  margin-right: 1em;
+  overflow: visible;
+  font-family: 'Roboto', sans-serif;
+}
+.logbut
+{
+  font-size: 15px;
+  margin-top: 1%;
+  color: black;
+  background-color: rgba(238, 111, 39);
+  padding: 10px 46px;
+  border: none;
+  border-radius: 40px;
+  margin-right: 1em;
+  overflow: visible;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(238, 111, 39), url('/public/ellipses.svg');
+  background-repeat: no-repeat;
+  background-size: cover, contain;
+  background-position: center, center;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+  position: absolute;
+  top: 70px; /* Adjust based on navbar height and margin-top */
+  left: 10%; /* Centered based on navbar width */
+  right: 10%; /* Centered based on navbar width */
+  background-color: #E5E5E5;
+  border-radius: 30px;
+  z-index: 999; /* Ensure it appears above the navbar */
+}
+
+.nav-links.open {
+  height: 150px; /* Adjust height based on number of links */
+}
+
+.nav-links li {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  font-family: 'Secular';
+  display: block;
+}
+
+.nav-links li a:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin-top: 30px;
+    width: 90vw;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+  }
+
+  .h-wrap {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .h-wrap a {
+    font-size: 15px;
+  }
+
+  .log {
+    margin-top: 20px;
+    padding: 5px 15px;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 645px) {
+  .hamburger {
+    display: inline-block;
+  }
+  .points {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    margin-top: 30px;
+    width: 90vw;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .h-wrap {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .h-wrap a {
+    font-size: 12px;
+  }
+
+  .log {
+    margin-top: 20px;
+    padding: 5px 15px;
+    margin-right: 0;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,111 @@
+/* frontend/src/page/registrationSuccess.css */
+@font-face {
+  font-family: 'VVDS';
+  src: url('../fonts/VVDS-Fifties-Exp-Bold-Italic.otf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Success-wrap {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('/public/ellipses.svg');
+  background-size: cover;
+  overflow: hidden;
+  }
+  
+  .texts {
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vw;
+  }
+  .texts5 {
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+  }
+  
+  .success-message {
+    font-size: 40px;
+    font-family: 'VVDS', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .congratulations-text
+  {
+    padding-top: 80px;
+  }
+  .ca-program-message {
+    font-family: 'VVDS', sans-serif;
+    font-size: 2em;
+    margin-top: 60px;
+  }
+  
+  
+
+  .congratulations-text {
+    overflow: visible;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'VVDS', sans-serif;
+    font-size: 80px;
+    letter-spacing: 0.1px;
+    line-height: 1.1;
+    color: transparent;
+    -webkit-text-stroke: 4px #000000;
+  }
+
+  @media (max-width: 1200px) {
+    .Success-wrap {
+      margin-top: 10%;
+    }
+    
+    .congratulations-text
+    {
+      font-size: 60px;
+    }
+    
+    .success-message
+    {
+      font-size: 30px;;
+    }
+
+  }
+  @media (max-width: 720px) {
+    .Success-wrap {
+      margin-top: 15%;
+    }
+    
+    .congratulations-text
+    {
+      font-size: 40px;
+    }
+    
+    .success-message
+    {
+      font-size: 30px;
+    }
+   .ca-program-message
+   {
+    font-size: 20px;
+   }
+  }
+  @media(max-width:480px)
+  {
+    .congratulations-text
+    {
+      font-size: 40px;
+    }
+  }
+  

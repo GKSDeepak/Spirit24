@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background:rgba(238, 111, 39);
+}
+
+.leaderboard-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.leaderboard-header {
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.522); /* change color accordingly */
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.leaderboard-item .position {
+    font-weight: bold;
+}
+
+.leaderboard-item .name {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.leaderboard-item .points {
+    text-align: right;
+    color: #333;
+}

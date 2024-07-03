@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "KumbhSans";
+    src: url("../fonts/KumbhSans-VariableFont_YOPQ,wght.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+  font-family: "Robo";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: 100;
+}
+.sponsorsMain {
+    text-align: center;
+    padding: 20px;
+    background-color: #141414;
+    padding-bottom: 40px;
+}
+
+.sponsorHeader {
+    margin-bottom: 20px;
+    color:#E57847;
+    font-family: 'KumbhSans',sans-serif;
+    font-size: 40px;
+}
+.spon{
+  color:white;
+  font-size: 16px;
+  font-family: 'Robo',sans-serif;
+  margin-bottom: 10px;
+}
+.sponsors {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    justify-items: center;
+    align-items: center;
+}
+
+.sponsors a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+@media(max-width:1430px)
+{
+    .sponsors{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      }  
+}
+@media(max-width:1140px)
+{
+  .sponsors{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }  
+}
+@media(max-width:983px)
+{
+  .sponsors{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }  
+}
+@media(max-width:570px)
+{
+  .sponsors{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }  
+}
+@media(max-width:470px)
+{
+  .sponsors{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }  
+}

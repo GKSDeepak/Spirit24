@@ -1,0 +1,195 @@
+.App {
+  
+    text-align: center;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  
+  }
+  
+  form {
+    border-radius: 20px;
+    margin-top: 5.8%;
+    margin-bottom:5%;
+  
+    display: inline-block;
+    text-align: left;
+    width: 40vw;
+    
+    padding: 10px 35px;
+    position: relative;
+      z-index: 10;
+      background-color:#FF823B;
+      
+    
+  }
+  
+
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .col {
+    flex: 1;
+    margin-right: 25px;
+  }
+  
+  .col:last-child {
+    margin-right: 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px;
+  }
+  
+  input {
+    border-color: white;
+    border-radius: 10px;
+    width: 98%;
+    outline: none;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+  }
+  
+  .underline{
+    border: 0;
+    height: 2px;
+    background-color: black;
+   
+  }
+  
+  .underline-text {
+    display: inline-block; /* Ensure the element is treated as a block for ::after */
+    position: relative; /* Position relative to allow ::after positioning */
+    font-size: 30px;
+    color: black;
+  }
+  
+ .underline-container {
+     padding-bottom: 2px;
+  }
+  
+  .error{
+    color:rgb(193, 0, 0);
+  }
+ 
+  
+  .others{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Done {
+    text-align: center;
+    font-size: 13px;
+    border-radius: 30px;
+    background-color: black;
+    width: 35vw;
+    height: 32px;
+    padding-top: 0;
+    outline: none;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+.Done:hover {
+  transform: scale(1.1);
+}
+  .cancel{
+    text-decoration: underline;
+    margin-top: 1%;
+    font-size: 13px;
+  }
+  .spirit{
+    position: absolute;
+    z-index: 2;
+    font-size:34vw;
+  padding-bottom: 40vw;
+  
+  }
+  @media (max-width: 550px )  {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        min-width: 100%; /* Ensure full width */
+    }
+
+    .others {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .others .cancel {
+        margin-top: 10px;
+    }
+    
+}
+
+
+  @media (max-width: 650px) {
+    
+    .spirit{
+      
+      padding-bottom: 55vw;
+    }
+}
+
+@media (max-width: 550px) {
+    
+  .spirit{
+    
+    padding-bottom: 85vw;
+  }
+}
+@media (max-width: 500px) {
+    
+  .spirit{
+    
+    padding-bottom: 90vw;
+  }
+}
+@media (max-width: 450px) {
+    
+  .spirit{
+    
+    padding-bottom: 120vw;
+  }
+}
+
+
+
+
+@media (max-width: 350px) {
+    
+  .spirit{
+    
+    padding-bottom: 150vw;
+  }
+}
+  @media (min-width: 900px) {
+    
+    .spirit{
+      
+      padding-bottom: 30vw;
+    }
+}
+  @media (min-width: 1100px) {
+    
+    .spirit{
+      font-size: 30vw ;
+      padding-bottom: 25vw;
+    }
+}

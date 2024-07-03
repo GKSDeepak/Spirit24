@@ -1,0 +1,283 @@
+.LApp {
+
+
+  text-align: center;
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 150%;
+  background-image: url('/public/ellipses.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.Lform {
+  border-radius: 20px;
+  margin-top: 5.8%;
+  margin-bottom: 5%;
+  width: 40vw;
+  height: 300px;
+  display: inline-block;
+  text-align: left;
+  top: 30%;
+  padding: 10px 30px;
+  position: relative;
+  z-index: 10;
+  background-color: #FF823B;
+  
+
+}
+
+.animation {
+  position: relative;
+  /* width: 100%; */
+  /* height: 100%; */
+  overflow: hidden;
+  /* Hide overflow */
+}
+
+.animation::before {
+  content: "";
+  position: absolute;
+  /* top: 50%; Center vertically */
+  /* left: 50%; Center horizontally */
+  width: 180%;
+  /* Large enough to prevent clipping */
+  height: 180%;
+  /* Large enough to prevent clipping */
+  /* transform: translate(-50%, -50%); Center the image */
+  background:url('/public/sportsball.png') center center no-repeat;
+  background-size: calc(40%);
+  z-index: -1;
+  animation: rotateBalls 5s linear infinite;
+  transform-origin: center center;
+  /* Rotate around the center of the div */
+}
+
+@keyframes rotateBalls {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spirit {
+  font-style: italic;
+  font-size: 23em;
+  padding-right: 4.5%;
+  padding-top: 10%;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.col {
+  flex: 1;
+
+}
+
+
+
+label {
+  display: block;
+  margin: 7px;
+  font-size: 15px;
+}
+
+input {
+  border-color: white;
+  border-radius: 10px;
+  width: 98%;
+  outline: none;
+  padding: 4px;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+}
+
+.underline {
+  border: 0;
+  height: 2px;
+  background-color: black;
+
+}
+
+.underline-text {
+  display: inline-block;
+  /* Ensure the element is treated as a block for ::after */
+  position: relative;
+  /* Position relative to allow ::after positioning */
+  font-size: 30px;
+  color: black;
+}
+
+.underline-container {
+  padding-bottom: 2px;
+}
+
+.error {
+  color: rgb(193, 0, 0);
+}
+
+
+.others {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.continue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 10px;
+  background-color: black;
+  width: 50%;
+  max-width: 200px;
+  /* Set a max width */
+  height: 35px;
+  padding: 7px 20px;
+  /* Adjust padding for better responsiveness */
+  color: white;
+  transition: all 0.3s ease;
+  /* Smooth transition for changes */
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+  .continue {
+    width: 50%;
+    max-width: 150px;
+    font-size: 12px;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .continue {
+    width: 70%;
+    max-width: 120px;
+    font-size: 11px;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .continue {
+    width: 90%;
+    max-width: 100px;
+    font-size: 10px;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+
+.cancel {
+  text-decoration: underline;
+  margin-top: 1%;
+  font-size: 13px;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vw;
+}
+
+small {
+  margin-top: 10px;
+}
+
+small a {
+  text-decoration: underline;
+}
+@media(max-width:1100px)
+{
+  .spirit
+  {
+    font-size: 25vw;
+  }
+}
+@media (max-width: 550px) {
+  .Lform {
+    border-radius: 20px;
+    margin-top: 0%;
+
+    width: 50vw;
+    height: 300px;
+
+
+  }
+
+}
+
+@media (max-width: 490px) {
+  .Lform {
+
+    margin-top: 0;
+    width: 60vw;
+    height: 320px;
+
+
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .continue {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .spirit {
+
+    padding-bottom: 68vw;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .spirit {
+
+    padding-bottom: 74vw;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .spirit {
+
+    padding-bottom: 80vw;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .spirit {
+
+    padding-bottom: 102vw;
+  }
+}
